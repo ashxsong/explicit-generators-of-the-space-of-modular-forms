@@ -7,13 +7,13 @@ $$r_t+(-1)^{t}r_{\kappa-2-t}=0,$$
 $$(-1)^{t}r_t+\sum_{\substack{0\leq \ell\leq t\\\\ \ell\equiv0\pmod2}}\binom{t}{\ell}r_{\kappa-2-t+\ell}+\sum_{\substack{0\leq \ell\leq \kappa-2-t\\\\\ell\equiv t\pmod2}}\binom{\kappa-2-t}{\ell}r_{\ell}=0,$$
 $$\sum_{\substack{1\leq \ell\leq t\\\\\ell\equiv1\pmod2}}\binom{t}{\ell}r_{\kappa-2-t+\ell}+\sum_{\substack{0\leq \ell\leq \kappa-2-t\\\\\ell\not\equiv t\pmod2}}\binom{\kappa-2-t}{\ell}r_{\ell}=0.$$
 
-## Proposition 2.2(1)
+## Proposition 2.2 (1)
 
 Using the first Eichler-Shimura relation, for $t \leq \frac{\kappa - 2}{2}$, the second Eichler-Shimura relation can be rewritten as
 
 $$\sum_{\substack{0\leq \ell\leq t\\\\ 2\mid \ell}} \left[\binom{\kappa - 2 - t}{\ell} - \binom{t}{t - \ell} \right] r_{\ell}+\sum_{\substack{t<\ell\leq \frac{\kappa - 2}{2}\\\\2 \mid (\ell - t)}}\left[\binom{\kappa - 2 - t}{\ell} -\binom{\kappa - 2 - t}{\kappa - 2 - \ell} \right]r_{\ell}= 0.$$
 
-## Proposition 2.2(2)
+## Proposition 2.2 (2)
 
 Using the first Eichler-Shimura relation, for $t \leq \frac{\kappa -2}{2}$, the third Eichler-Shimura relation can be rewritten as
 
