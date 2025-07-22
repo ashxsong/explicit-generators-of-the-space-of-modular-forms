@@ -13,10 +13,11 @@ Using the first Eichler-Shimura relation, for $t \leq \frac{\kappa - 2}{2}$, the
 
 $$\sum_{\substack{0\leq \ell\leq t\\\\ 2\mid \ell}} \left[\binom{\kappa - 2 - t}{\ell} - \binom{t}{t - \ell} \right] r_{\ell}+\sum_{\substack{t<\ell\leq \frac{\kappa - 2}{2}\\\\2 \mid (\ell - t)}}\left[\binom{\kappa - 2 - t}{\ell} -\binom{\kappa - 2 - t}{\kappa - 2 - \ell} \right]r_{\ell}= 0.$$
 
-Applying \eqref{eq:ES2'}, the entries of $\mathbf{A}$ are explicitly given by the following:
+Applying the equation above, the entries of $\mathbf{A}$ are explicitly given by the following:
+
 (1) If $m$ is even, then $\ell \leq t$ for all $i, j$, implying that
 
-$$a_{ij} = \binom{6m + 2 \lceil\frac{3m}{2}\rceil-2i +2a - 2\lfloor\frac{a}{2}\rfloor}{ 2j} - \binom{ 6m - 2 \lceil\frac{3m}{2}\rceil + 2i + 2\lfloor\frac{a}{2}\rfloor-2}{ 2j}.$$
+$$a_{ij} = \binom{6m + 2 \left\lceil\frac{3m}{2}\right\rceil-2i +2a - 2\left\lfloor\frac{a}{2}\right\rfloor}{ 2j} - \binom{ 6m - 2 \left\lceil\frac{3m}{2}\right\rceil + 2i + 2\left\lfloor\frac{a}{2}\right\rfloor-2}{ 2j}.$$
 
 (2) If $m$ is odd, then $\ell \leq t$ for all $i, j$, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \{0, 1\}$. So the entries $a_{ij}$ are given by the formula above, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \{0, 1\}$, in which case
 
