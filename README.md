@@ -36,6 +36,22 @@ $$p_{ij} = \begin{cases}
       0, &\quad i>j.
    \end{cases}$$
 
+
+Now, in the next lemma, we determine the entries of the anti-diagonal of $\mathbf{P}\mathbf{A}$.
+Let $y = \lceil \frac{3m}{2} \rceil + 1 - j$. If $m$ is even, then
+
+$$(\mathbf{PA}_{yj}) = \sum_{x = 1}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \sum_{x = y}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj}$$
+
+
+$$= \left\{\begin{cases} 2^{2(j - 1)}(12m - 2j + 2a - 1), &\quad a \equiv 0 \pmod 2, \\\\ 2^{2j - 1}(12m - 2j + 2a - 1), &\quad a \equiv 1 \pmod 2.$$
+    If $m$ is odd, then $(\mathbf{PA})_{yj}$ is given by the formula above, except for $j = \frac{3m + 1}{2}$ and $a \in \{0, 1\}$, in which case
+    \begin{equation*}
+        (\mathbf{PA})_{yj}=\sum_{x = 1}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \sum_{x = y}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \left\{\begin{array}{ll}
+            2^{3m - 1}(9m - 2) - \binom{9m - 1}{2}, &\quad a = 0,\\
+            2^{3m}(9m) - \binom{9m + 1}{2}, &\quad a = 1.
+    \end{array}\right.
+    \end{equation*}
+
 ## Proposition 2.2 (2)
 
 Using the first Eichler-Shimura relation, for $t \leq \frac{\kappa -2}{2}$, the third Eichler-Shimura relation can be rewritten as
