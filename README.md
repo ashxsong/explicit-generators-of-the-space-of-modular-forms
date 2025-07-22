@@ -51,6 +51,37 @@ Using the first Eichler-Shimura relation, for $t \leq \frac{\kappa -2}{2}$, the 
 
 $$\sum_{\substack{1\leq \ell\leq t\\\\ 2 \nmid \ell}} \left[\binom{\kappa - 2 - t}{\ell} + \binom{t}{t - \ell} \right]r_{\ell}+\sum_{\substack{t < \ell \leq \frac{\kappa - 2}{2}\\\\ 2\nmid(\ell-t)}}\left[\binom{\kappa - 2 - t}{\ell} +\binom{\kappa - 2 - t}{\kappa - 2 - \ell} \right]r_{\ell}= 0.$$
 
+(1) If $m$ is even, then $\ell \leq t$ for all $i, j$, implying that
+
+$$a_{ij} =\binom{6m + 2 \lceil\frac{3m}{2}\rceil-2i +2a - 2\lfloor\frac{a}{2}\rfloor}{ 2j-1} + \binom{ 6m - 2 \lceil\frac{3m}{2}\rceil + 2i + 2\lfloor\frac{a}{2}\rfloor-2}{ 2j-1}.$$
+
+(2) If $m$ is odd, then $\ell \leq t$ for all $i, j$, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \\{0, 1\\}$. So the entries $a_{ij}$ are given by the formula above, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \\{0, 1\\}$, in which case
+
+$$a_{ij} = \binom{9m+2a - 1}{ 3m} +\binom{9m+2a- 1}{1}.$$
+
+The elimination matrix $\mathbf{P}=(p_{ij})_{i,j}$ is given by the following: 
+
+(1) If $a$ is even, then 
+
+$$p_{ij} = \begin{cases} (-1)^{j-i}\left[\binom{ 2\lceil \frac{3m}{2}\rceil-2i - 1}{ j-i} - \binom{2\lceil\frac{3m}{2}\rceil-2i -1}{ j-i  - 2}\right],&\quad i \leq j,\\\\0, &\quad i>j.\end{cases} $$
+      
+(2) If $a$ is odd, then 
+
+$$ p_{ij} = \begin{cases}(-1)^{j - i} \frac{2\left(\lceil \frac{3m}{2} \rceil - j + 1\right)^2}{\left(2\lceil \frac{3m}{2} \rceil - i - j + 2\right)\left(\lceil \frac{3m}{2} \rceil - i + 1\right)} \binom{2\left\lceil \frac{3m}{2} \right\rceil - 2i + 1}{j - i}, &\quad i \leq j, \\\\0, &\quad i > j. \end{cases}$$
+
+Let $y = \lceil \frac{3m}{2} \rceil + 1 - j$. If $m$ is even, then
+
+$$(\mathbf{PA})\_{yj} = \sum_{x = 1}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \sum_{x = y}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \begin{cases}2^{2(j - 1)}(12m - 2j + 2a), &\quad a \equiv 0 \pmod 2, \\\\ 
+\frac{2^{2(j - 1)}(12m - 2j + 2a)(2j - 1)}{j}, &\quad a \equiv 1 \pmod 2.
+\end{cases}$$
+    
+If $m$ is odd, then $(\mathbf{PA})\_{yj}$ is given by the formula above, except for $j = \frac{3m+1}{2}$ and $a\in \\{0,1\\}$, in which case
+
+$$(\mathbf{PA})\_{yj} =\sum_{x = 1}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \sum_{x = y}^{\lceil \frac{3m}{2} \rceil} p_{yx} a_{xj} = \begin{cases}
+            2^{3m - 1}(9m - 1) + (9m - 1), &\quad a = 0, \\\\
+            \frac{2^{3m}(9m + 1)(3m)}{3m + 1} + (9m + 1), &\quad a = 1.
+    \end{cases}$$
+    
 ## References
 <a id="1">[1]</a>
 Ju. I. Manin. Periods of cusp forms, and p-adic Hecke series. Mat. Sb. (N.S.), 92(134):378–401, 503, 1973.
