@@ -19,7 +19,7 @@ Applying the equation above, the entries of $\mathbf{A}$ are explicitly given by
 
 $$a_{ij} = \binom{6m + 2 \left\lceil\frac{3m}{2}\right\rceil-2i +2a - 2\left\lfloor\frac{a}{2}\right\rfloor}{ 2j} - \binom{ 6m - 2 \left\lceil\frac{3m}{2}\right\rceil + 2i + 2\left\lfloor\frac{a}{2}\right\rfloor-2}{ 2j}.$$
 
-(2) If $m$ is odd, then $\ell \leq t$ for all $i, j$, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \{0, 1\}$. So the entries $a_{ij}$ are given by the formula above, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \{0, 1\}$, in which case
+(2) If $m$ is odd, then $\ell \leq t$ for all $i, j$, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \\{0, 1\\}$. So the entries $a_{ij}$ are given by the formula above, except for $(i, j) = \left(1, \frac{3m + 1}{2}\right)$ and $a \in \\{0, 1\\}$, in which case
 
 $$a_{ij} = \binom{9m +2a-1 }{3m+1} - \binom{9m+2a-1}{2}.$$
 
@@ -32,7 +32,7 @@ $$p_{ij} = \begin{cases}(-1)^{j - i} \binom{2\left\lceil \frac{3m}{2} \right\rce
 (2) If $a$ is odd, then 
 
 $$p_{ij} = \begin{cases} 
-      (-1)^{j-i}\left[\binom{ 2\lceil\frac{3m}{2}\rceil-2i + 1}{ j-i} - \binom{2\lceil\frac{3m}{2}\rceil -2i+ 1}{j - i - 1}\right],&\quad i \leq j,\\
+      (-1)^{j-i}\left[\binom{ 2\left\lceil\frac{3m}{2}\right\rceil-2i + 1}{ j-i} - \binom{2\left\lceil\frac{3m}{2}\right\rceil -2i+ 1}{j - i - 1}\right],&\quad i \leq j,\\
       0, &\quad i>j.
    \end{cases}$$
 
