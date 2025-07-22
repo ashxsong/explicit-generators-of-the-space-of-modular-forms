@@ -1,1 +1,1 @@
-# explicit-generators-of-the-space-of-modular-forms
+# Explicit Generators of the Space of Modular Forms
